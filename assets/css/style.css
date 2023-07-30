@@ -2,6 +2,15 @@ body{
     margin: 0;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .top{
@@ -264,6 +273,17 @@ body{
     justify-content: space-between;
 }
 
+.main-player-nav {
+    position: fixed;
+    background-color: #121212;
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+.recently-played11{
+    margin-top: 50px;
+}
+
 .nav-icons{
     display: flex;
     align-items: center;
@@ -348,7 +368,12 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin-bottom: 10px;
     align-items: center;
+}
+
+.recently-played2{
+    margin-top: 10px;
 }
 
 .recently-played{
@@ -376,7 +401,14 @@ body{
 .main-player-cards{
     padding: 0 24px;
     display: flex;
-    gap: 25px;
+    justify-content: space-between;
+    overflow: scroll;
+    gap: 30px;
+
+}
+
+.main-player-cards::-webkit-scrollbar {
+    display: none;
 }
 
 .card{
@@ -393,6 +425,7 @@ body{
 .card:hover{
     background-color: #282828;
     cursor: pointer;
+    transition: 1s;
 }
 
 .card-pic{
@@ -400,7 +433,25 @@ body{
     width: 189px;
     display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 6%;
+    right: 12%;
+}
+
+.card-button{
+    background-color: #1ed760;
+    border: none;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .card-pic img{
