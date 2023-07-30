@@ -437,7 +437,7 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
-#card-btn{
+.card-btn{
     position: absolute;
     bottom: 6%;
     right: 12%;
