@@ -267,7 +267,8 @@ body::-webkit-scrollbar {
 }
 
 .main-player-nav{
-    position: sticky;
+/*     position: sticky; */
+    z-index: 1;
     padding: 20px 20px 0 20px;
     display: flex;
     justify-content: space-between;
